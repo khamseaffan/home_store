@@ -1,0 +1,49 @@
+test/*
+*/application-prod.properties
+*//src/main/resources/application.properties
+
+
+.idea/*
+
+# Ignore sensitive service account keys
+**/serviceAccountKey.json
+
+# Ignore environment files
+.env
+*.env
+
+# Ignore IDE and OS files
+.DS_Store
+.idea/
+.vscode/
+
+# Ignore build and dependency folders
+node_modules/
+dist/
+build/
+.gradle/
+
+# Ignore logs
+*.log
+
+# Ignore Docker artifacts
+*.pid
+
+# Ignore test coverage
+coverage/
+
+# Ignore local database files
+*.db
+*.sqlite
+
+# Ignore other secrets
+**/secrets.*
+home_store_microservices/config-service/bin/main/application.yml
+home_store_microservices/config-service/src/main/resources/application.yml
+home_store_microservices/product-service/src/main/resources/serviceAccountKey.json
+home_store_microservices/config-service/src/main/resources/application.yml
+home_store_microservices/config-service/bin/main/application.yml
+
+HomeStore_config/*
+
+*/bin/*
