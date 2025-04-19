@@ -1,0 +1,63 @@
+---
+name: "Bug Report"
+description: "Report a bug to help us improve."
+title: "[BUG] <short description>"
+labels: [bug]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thank you for reporting a bug!
+        Please fill out the information below to help us reproduce and fix the issue.
+  - type: input
+    id: service
+    attributes:
+      label: Affected Service/Component
+      description: Which microservice or frontend component is affected?
+      placeholder: e.g. product-service, user-service, homestore_react
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Describe the bug in detail.
+      placeholder: What happened? What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: List the steps to reproduce the bug.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Logs or Screenshots
+      description: Paste any error logs or screenshots here.
+      placeholder: |
+        Paste logs or drag-and-drop screenshots
+    validations:
+      required: false
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, browser, Java/Node version, etc.
+      placeholder: e.g. macOS, Java 17, Node 18, Chrome
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I have searched existing issues
+        - label: I have provided sufficient information for reproduction
