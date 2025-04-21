@@ -46,4 +46,7 @@ home_store_microservices/config-service/bin/main/application.yml
 
 HomeStore_config/*
 
+# Ignore all bin folders recursively
+**/bin/
+
 */bin/*
