@@ -64,10 +64,11 @@ Thank you for your interest in contributing to the Home Store project! This docu
 
 ## Backend Guidelines
 - Each microservice is in its own folder under `home_store_microservices/`.
-- Each service manages its own database and configuration.
-- Sensitive files (e.g., `serviceAccountKey.json`, `.env`) must **never** be committed. Ensure they are in `.gitignore`.
-- Add or update API documentation in the relevant service's README or in `SERVICES.md`.
-- Write and maintain unit/integration tests (see `test/` directory for examples).
+- Each service manages its own database and configuration (see `HomeStore_config/` and `.env` file for environment-specific settings).
+- Sensitive files (e.g., `serviceAccountKey.json`, `.env` values if not using `.env.example` structure) must **never** be committed. Ensure they are in `.gitignore`.
+- Add or update API documentation in the relevant service's README, Swagger/OpenAPI documentation, or in `SERVICES.md`.
+- Write and maintain unit/integration tests (see `src/test/java/` in each service).
+- For services using Kafka, clearly document topics and message structures.
 
 ---
 
@@ -92,4 +93,4 @@ For questions, open an issue or contact a maintainer via the ZenHub board.
 
 ---
 
-Happy coding!
+_Last updated: May 25, 2025_
